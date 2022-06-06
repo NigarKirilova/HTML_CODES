@@ -1,0 +1,78 @@
+                                                     <!-- 4.
+                                                
+                                                INCLUDED :
+                                                FORM VE INPUT PARAMETRLERI 
+
+                                             -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- FORM hisse buton yaradi hansi ki mail dalan yazanda gonder duymesinde oldugu kimi  -->
+    <form action="file:///C:/Users/AlizadeN/Desktop/ngr-py/JavaScript/my%20second%20webpage.html">
+        <!-- asagida yardacagimiz butona basanda bizi gondereceyi linki bura elave dirik  -->
+        <label for="name">Name</label> <br/>
+        <!-- FORM qutusunun ustunde yazilan yazidi bu  -->
+        <input type="text" id="name" name="nameE"  /> <br/>
+        <!-- bu formun cercevesini yaradir hansi ki icin yazilarimi yazib gonderiri qarsi terefe  -->
+        <label for="email" >email</label><br/>
+        <!-- email hisseni yaziriq burda basliq olaraq-->
+        <input type="email" id="email" name="emaill"/>  <br/>
+        <!-- email hissenin cercevede beririk -->
+        <label for="password">password</label><br/>
+         <!-- parol hisseni yaziriq burda basliq olaraq-->
+        <input type="password" id="password" name="password"/><br/>
+        <!-- password hissenin cercevede beririk -->
+        <label for="date">date</label> <br/>
+        <!-- date hisseni yaziriq burda basliq olaraq-->
+        <input type ="date" id="date" name;="date"/> <br/><br/>
+        <!-- date hisseni yaziriq burda basliq olaraq-->
+        Gender <br/>    
+        male 
+        <input type="radio" name="gender" value="male"/>
+        female 
+        <input type="radio" name="gender" value="female"/>
+        other 
+        <input type="radio" name="gender" value="other"/><br/><br/>
+        <!-- genderi teyin edirik burda eger bir necesini(hem male hem female) isarelemek isteyirikse 
+        onda name="gender2"  yada name="gender3" kimi yaziriq qabaglarina-->
+
+        Hobbies  <br/>
+        technology
+        <input type="checkbox" name="tech" id="tech" checked/>
+        <br/> music
+        <input type="checkbox" name="music" id="music"/>
+        <br/>art
+        <input type="checkbox" name="art" id="art"/> <br/>
+        <!-- hobbileri tein edirik burda da  technology hobbisinin qarsisinda yazdigim checked sozu ile seyfeni yenileyende avtomatik
+        ozu technology hobbisini isarelemis olur -->
+        Degree
+        <select name="degree" id="degree">
+        <option value="bachelor">bakalavr</option>
+        <option value="master">magistr</option>
+        <option value="phd" selected>doktorantura</option>
+        </select><br/>
+        <!-- burda da derece secirik,selected sozune gore default olaraq doktorantura qeyd olunur seyfeni yenileyende  -->
+
+
+        Message<br/>
+        <textarea name="message" id="message" rows="10" cols="30" placeholder="your message"></textarea>
+
+
+        <br/> <input type="submit" value="submit"/> 
+        <!-- buda yazdigimiz yazilari gonderme ucun olan buton , bunun bir dene alyternativi de mesaji gondermek ucun buton tipli :
+        <button type="submit">mesaji gonder</button>
+        -->
+        <input type="reset" value="sifirla"/></form> <br/>
+        <!-- buda cercivede yazdigimiz yazilari sifirlayir 
+        <button type="reset">sifirla </button> -->
+    </form>
+ 
+</body>
+</html>

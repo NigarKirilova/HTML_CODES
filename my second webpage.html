@@ -1,0 +1,177 @@
+                                            <!-- 2.
+                                                
+                                                INCLUDED :
+                                                PRE , CEDVEL YARATMAQ, MELUMATLARI LISTEYE SALMAQ,
+                                                MAHNI/ VIDEO/ SEKIL ELAVE ETMEK , 
+                                                YENI SEYFEYE GETMEK UCUN LINK ELAVE ETMEK
+
+                                             -->
+
+
+
+<!DOCTYPE html>
+<html >
+
+<head>
+    <meta charset="UTF-8">
+
+
+    <title>HTML5 LINKS </title>
+
+    <style>table,
+    th,
+    td{border: 1px solid black ;
+        border-collapse: collapse;
+    }
+    </style>
+
+    <!-- <style> ... <style/> burda yaratdigimiz cedvelde kenarlarini elave edirik , css ile baglidi-->
+
+    <style>
+             span{border: 1px solid red}
+    </style>
+        <!-- spandan uzun metnde qisa birsozu renglemek ya nese etmek ucun istifade edeiler.usteki buna uygum numunedi 
+        divden ise uzun bi metni deyisib , renglemek ucun kimi istifade edirler  -->
+</head>
+
+<body>
+ 
+     <table> <!--cedvel yaradiriq -->
+        <thead> <!--yaratdiimiz cedvelde baslig hissesidi bura cedvelin-->
+            <tr> <!--table rovlaridi bu hissede tablin column rowlarin veririk-->
+                <th>name</th> <!--column lar-->
+                <th>department</th> <!--column lar-->
+                <th>salary</th> <!--column lar-->
+            </tr>
+        </thead>
+
+        <tbody><!--yaratdiimiz cedvelde body hissesidi bura cedvelin-->
+
+            <tr>
+                <td>Nigar</td> <!--value lar-->
+                <td>kapitalbank</td> <!--value lar-->
+                <td>8000</td><!--value lar-->
+            </tr>
+
+            <tr>
+                <td>Ali</td><!--value lar-->
+                <td>kapitalbank</td><!--value lar-->
+                <td>9000</td><!--value lar-->
+            </tr>
+        </tbody>
+
+     </table>   
+  
+    <!--listelerin 2 novu var ordered(ol -sirasiz) ve unordered (ul- sirasiz) -->
+
+
+     <ul type="circle">  <!-- <ul> -ile burda da liste yaradiriq tip olaraq da qarsisindaki isareni cevre yazdiq 
+    amma burda tip vermesek qara noqte olur , yada square verib dordbucaq etmekyada non edib legb etmek olar -->
+        <li>front end</li> <!--listenin ici-->
+            <ul>
+                <li>react</li>   <!--listenin icinde daxili bir liste -->
+                <li>vue</li>
+                <li>angular</li>
+            </ul>
+        <li>back end</li>
+            <ul>
+                <li>c#</li>  <!--buda liste ice liste -->
+                <li>java</li>
+                <li>python</li>
+            </ul>
+        <li>full stack</li>
+     </ul>
+
+
+     <ol start="50" type="A">  <!--burda da sayilan listelerdi 50 ile baslasin dedikk ve tip olaraq da 1 
+    verdikde adi reqemleri siralayir , A herfi versek tipde herflerle verir sirani , I secende de rum reqemlerile-->
+        <li>java</li>
+        <li>python</li>
+        <li>javascript</li>
+
+
+     </ol>
+
+
+
+     <audio src="./Leonardo-Da-Vinci-War-Machines.mp3"  controls autoplay>
+         <!--burda yoxlamaq ucun sekili qoydum heleik amma normalda 
+        yuklediyim mahnini qoyuram ve burda controls sozu videonu basladib dayandirma isareleri qoyur autoplay ise seyfeye giren kimi 
+    mahni basliyir avtomatik-->
+
+     </audio>
+
+
+     <video src="./Leonardo-Da-Vinci-War-Machines.mp4" controls autoplay>  <!--burda yoxlamaq ucun sekili qoydum heleik amma normalda 
+        yuklediyim videonu qoyuram ve burda controls sozu videonu basladib dayandirma isareleri qoyur autoplay ise seyfeye giren kimi 
+    video basliyir avtomatik-->
+
+     </video>
+
+     <img src="./Leonardo-Da-Vinci-War-Machines.jpg" width="150" height="100" alt="davinci"> 
+     <!--komputerin oz yaddasina yuklediyim (yani ./ ile secdiyim  ele bu papkanin icindeki) shekili seyfeye yukleyir
+     ve sekilin eni 350 uzunlugunu da 300 pixel veririk ve alt ile sekil islemese basliq kimi bunu yazdir-->
+ 
+     <br/>
+     <img src="https://www.infocuriosity.com/images/2015/09/Nikola-Tesla.jpg" width="150" height="100" alt="tesla"> 
+       <!--internetden (copy image address ile) kopyaladigim  shekilin linkin seyfeye yukleyir
+     ve sekilin eni 350 uzunlugunu da 300 pixel veririk ve alt ile sekil islemese basliq kimi bunu yazdir-->
+ 
+
+
+    <pre>
+
+        <!--pre funksiyasi paragraf kimidi amma ferqi odu ki seirleri ve s. oldugu kimi alt-alta kimi yazmaq olur , metn kimi olmur -->
+       vitae quaerat ut a repellendus
+       suscipit animi quasi  mollitia
+       itaque. Officiis ex soluta vero
+       laudantium eveniet reiciendis
+
+     </pre>
+
+
+
+     <p>Google-a getmek ucun
+
+        <a href="https://www.google.com"  target = "_blank" title="google linkimiz" >
+         daxil olun
+        </a>
+        <!--href google.com a aparan link funksiasidi
+        targete   burda blank vermekle google -i basqa tab ekranda aciriq2
+        title da mausu linkin ustune getirende google linkimis sozu gelir -->
+
+     </p>
+
+
+     <p>evvelki proekte getmek ucun
+
+        <a href="my first project.html"  target = "_blank" title="proekt linkimiz" >
+            daxil olun
+        </a>
+
+        <!--bu linkin google linkinden tek ferqi odu ki bude link oz localimizda olan proektimizin ozudu-->
+
+     </p>
+
+
+     <!-- NOTE : LINKLER INLINE(YANI OZ UZUNLUGU QEDER SEYFEDE YER TUTURLAR) FUNKSIYADI.AMMA H1,PARAGRAF FALAN ISE
+    BLOK (YANI YERLESDIYI SETIDE SETIRIN UZUNLUGU QEDER YER TUTURLAR)FUNKSIYADI.
+    AMMA ONU DA INLINE EDE BILERIK KI YER AZ TUTSUN , BUNUN UCUN CODUMUZ :
+    
+    <head> ...
+        <style> h1{ width :100px ; height: 100px}
+            ...
+    </head> 
+    <body>...
+        <h1>hello world </h1>
+        ...
+    </body> -->
+
+
+    <div>Lorem ipsum dolor, sit amet <span>consectetur</span> adipisicing elit. Quo, eligendi.</div>
+    <!-- div ve solid paragrafla oxsardi , yazi yazdirmaq ucundu 
+    amma div de blok funksiyad, span ise inline di. -->
+
+</body>
+
+</html>
